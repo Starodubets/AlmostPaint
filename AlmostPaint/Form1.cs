@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AlmostPaint.Figure;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,13 @@ namespace AlmostPaint
         public Form1()
         {
             InitializeComponent();
+
+            XCommand xCommand = new XCommand();
+            List<PFigure> pFigures = new List<PFigure>();
+
+            pMenu1.xCommand = xCommand;
+
         }
+        
     }
 }

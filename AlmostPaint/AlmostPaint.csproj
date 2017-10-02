@@ -45,6 +45,61 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\PDraw.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PDraw.Designer.cs">
+      <DependentUpon>PDraw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PMenu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PMenu.Designer.cs">
+      <DependentUpon>PMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PMenuLoc.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PMenuLoc.Designer.cs">
+      <DependentUpon>PMenuLoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PPlugin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PPlugin.Designer.cs">
+      <DependentUpon>PPlugin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PProperties.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PProperties.Designer.cs">
+      <DependentUpon>PProperties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PStatusBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PStatusBar.Designer.cs">
+      <DependentUpon>PStatusBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PTab.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\PTab.Designer.cs">
+      <DependentUpon>PTab.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PToolBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\PToolBox.Designer.cs">
+      <DependentUpon>PToolBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Figure\MFigure.cs" />
+    <Compile Include="Figure\PFigure.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Figure\PFigure.Designer.cs">
+      <DependentUpon>PFigure.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,6 +108,38 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serialization\Serializer.cs" />
+    <Compile Include="Utilites.cs" />
+    <Compile Include="Windows\AboutWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\AboutWindow.Designer.cs">
+      <DependentUpon>AboutWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\RenameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Windows\RenameForm.Designer.cs">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XCommand.cs" />
+    <Compile Include="XData.cs" />
+    <Compile Include="XText.cs" />
+    <EmbeddedResource Include="Controls\PMenu.resx">
+      <DependentUpon>PMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PPlugin.resx">
+      <DependentUpon>PPlugin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PProperties.resx">
+      <DependentUpon>PProperties.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PStatusBar.resx">
+      <DependentUpon>PStatusBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\PToolBox.resx">
+      <DependentUpon>PToolBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -65,6 +152,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Windows\AboutWindow.resx">
+      <DependentUpon>AboutWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Windows\RenameForm.resx">
+      <DependentUpon>RenameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Languages\Ru.json" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -78,5 +172,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
